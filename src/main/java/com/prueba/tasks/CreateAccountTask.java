@@ -38,7 +38,8 @@ public class CreateAccountTask  implements Task {
         actor.attemptsTo(Enter.theValue(contrasena).into(FirstPage.CampoContraseña));
         actor.attemptsTo(Click.on(FirstPage.SelectorDia));
         actor.attemptsTo(Click.on(FirstPage.Item.of(dia)));
-        actor.attemptsTo(Click.on(FirstPage.SelectMes.of(mes)));
+        actor.attemptsTo(Click.on(FirstPage.SelectMes));
+        actor.attemptsTo(Click.on(FirstPage.Item.of(mes)));
         actor.attemptsTo(Enter.keyValues(ano).into(FirstPage.CampoAno));
         actor.attemptsTo(Click.on(FirstPage.Checksuscribirse));
         actor.attemptsTo(Click.on(FirstPage.BotonRegistrar));
